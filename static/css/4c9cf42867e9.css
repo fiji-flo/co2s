@@ -1,0 +1,793 @@
+:root {
+    --body-bg-color: white;
+    --card-bg-color: #fafaf9;
+    --card-shadow-color: #e7e5e2;
+    --card-button-bg-color: #fafaf9;
+    --card-text-color: #4a4a4a;
+    --primary-color: #558194;
+    --border-color: #88d1f1;
+    --gradient-color: #88d1f1;
+    --gradient-text-color: inherit;
+    --input-bg-color: #446776;
+    --nav-link-color: black
+}
+
+#root-node-open-innovation-challenges {
+    --body-bg-color: white;
+    --primary-color: #23b9b9;
+    --border-color: #7effff;
+    --gradient-color: #7effff;
+    --gradient-text-color: #ffffff;
+    --input-bg-color: #247777;
+    --nav-link-color: black
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url("/static/fonts/opensans-light.woff2") format("woff2"), url("/static/fonts/opensans-light.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    font-weight: bold;
+    font-style: normal;
+    src: url("/static/fonts/opensans-semibold.woff2") format("woff2"), url("/static/fonts/opensans-semibold.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    font-weight: normal;
+    font-style: italic;
+    src: url("/static/fonts/opensans-lightitalic.woff2") format("woff2"), url("/static/fonts/opensans-lightitalic.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    font-weight: bold;
+    font-style: italic;
+    src: url("/static/fonts/opensans-semibolditalic.woff2") format("woff2"), url("/static/fonts/opensans-semibolditalic.woff") format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: normal;
+    font-style: normal;
+    src: url("/static/fonts/opensans-regular.woff2") format("woff2"), url("/static/fonts/opensans-regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: bold;
+    font-style: normal;
+    src: url("/static/fonts/opensans-bold.woff2") format("woff2"), url("/static/fonts/opensans-bold.woff") format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: normal;
+    font-style: italic;
+    src: url("/static/fonts/opensans-italic.woff2") format("woff2"), url("/static/fonts/opensans-italic.woff") format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: bold;
+    font-style: italic;
+    src: url("/static/fonts/opensans-bolditalic.woff2") format("woff2"), url("/static/fonts/opensans-bolditalic.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    font-weight: normal;
+    font-style: normal;
+    src: url("/static/fonts/ZillaSlab-Regular.woff2") format("woff2"), url("/static/fonts/ZillaSlab-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    font-weight: bold;
+    font-style: normal;
+    src: url("/static/fonts/ZillaSlab-Bold.woff2") format("woff2"), url("/static/fonts/ZillaSlab-Bold.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    font-weight: normal;
+    font-style: italic;
+    src: url("/static/fonts/ZillaSlab-Italic.woff2") format("woff2"), url("/static/fonts/ZillaSlab-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    font-weight: bold;
+    font-style: italic;
+    src: url("/static/fonts/ZillaSlab-BoldItalic.woff2") format("woff2"), url("/static/fonts/ZillaSlab-BoldItalic.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlabHighlight;
+    font-weight: normal;
+    font-style: normal;
+    src: url("/static/fonts/ZillaSlabHighlight-Regular.woff2") format("woff2"), url("/static/fonts/ZillaSlabHighlight-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: ZillaSlabHighlight;
+    font-weight: bold;
+    font-style: normal;
+    src: url("/static/fonts/ZillaSlabHighlight-Bold.woff2") format("woff2"), url("/static/fonts/ZillaSlabHighlight-Bold.woff") format("woff")
+}
+
+.highlight {
+    color: white;
+    display: block;
+    font-family: ZillaSlabHighLight;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    width: auto
+}
+
+@media (min-width:992px) {
+    .highlight {
+        max-width: 70%
+    }
+}
+
+.breadcrumbs {
+    font-size: .9em
+}
+
+.breadcrumbs a {
+    color: black
+}
+
+.breadcrumbs a:hover {
+    text-decoration: none
+}
+
+.btn-outline-primary {
+    border-color: var(--border-color);
+    color: white;
+    padding: 0.5rem 3rem
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+    color: white
+}
+
+.btn-outline-secondary {
+    border-color: black;
+    color: black;
+    padding: 0.5rem 3rem
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+    color: white
+}
+
+.btn-outline-default {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 3rem
+}
+
+.btn-outline-default:hover,
+.btn-outline-default:active,
+.btn-outline-default:focus {
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+    color: white
+}
+
+.btn-outline-danger {
+    border-color: #ff8c8e;
+    color: #fb8e92;
+    padding: 0.5rem 3rem
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:active,
+.btn-outline-danger:focus {
+    background-color: white;
+    border-color: #ff8c8e;
+    color: #fb8e92
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    font-size: 1em;
+    padding: 0.5em
+}
+
+.badge-primary[href]:hover,
+.badge-primary[href]:focus,
+.badge-primary[href]:active {
+    background-color: var(--primary-color);
+    color: black
+}
+
+.icon img {
+    height: 15px;
+    width: 15px
+}
+
+.card-deck {
+    justify-content: center
+}
+
+.card-deck .card {
+    align-self: flex-start;
+    background-color: var(--card-bg-color);
+    border: none;
+    box-shadow: 7px 7px 0 0 var(--card-shadow-color);
+    display: block;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    width: 350px
+}
+
+.card-deck .card.cl-6 {
+    width: 555px
+}
+
+.card-deck .card.cl-6 .card-body>img {
+    height: 300px;
+    width: 540px
+}
+
+.card-deck .card.cl-4 {
+    width: 360px
+}
+
+.card-deck .card.cl-4 .card-body>img {
+    height: 200px;
+    width: 360px
+}
+
+.card-deck .card.cl-3 {
+    width: 350px
+}
+
+.card-deck .card.cl-3 .card-body>img {
+    height: 200px;
+    width: 360px
+}
+
+@media all and (max-width:575px) {
+    .card-deck .card {
+        max-width: 100%
+    }
+}
+
+.card-deck .card:not(:first-child) {
+    margin-left: 0
+}
+
+.card-deck .card .card-header {
+    background-color: var(--card-bg-color);
+    border-bottom: none;
+    min-height: 100px
+}
+
+.card-deck .card .card-header a {
+    color: black;
+    font-weight: normal
+}
+
+.card-deck .card .card-header a:hover {
+    text-decoration: none
+}
+
+.card-deck .card .card-header svg {
+    margin-top: 12px
+}
+
+.card-deck .card .card-body {
+    margin: 0 15px 15px 15px;
+    overflow-x: hidden
+}
+
+.card-deck .card .card-body .rich-text {
+    color: dimgray;
+    font-weight: normal;
+    line-height: 22px;
+    max-height: calc(22px * 4);
+    overflow: hidden;
+    padding-top: 20px;
+    text-overflow: ellipsis;
+    word-wrap: break-word
+}
+
+.card-deck .card .card-body .cta {
+    font-family: OpenSans;
+    margin-top: 25px;
+    text-align: center
+}
+
+.card-deck .card .card-body .cta a {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding-bottom: 5px
+}
+
+.card-deck .card .card-body .cta a:hover {
+    border-bottom: 1px solid var(--primary-color)
+}
+
+.card-deck .card.card-mini {
+    overflow: auto
+}
+
+.card-deck .card.card-mini .card-img {
+    float: left;
+    height: auto;
+    margin: 1rem;
+    max-width: 40%
+}
+
+@media all and (max-width:768px) and (min-width:575px) {
+    .card-deck .card.card-mini .card-img {
+        display: block;
+        float: none;
+        margin: 1rem auto 0 auto
+    }
+}
+
+@media all and (max-width:575px) {
+    .card-deck .card.card-mini .card-img {
+        margin: 1rem 2rem 1rem 1rem;
+        max-height: 110px;
+        max-width: 110px
+    }
+}
+
+.card-deck .card.card-mini .card-header {
+    border-bottom: none;
+    min-height: auto;
+    overflow: hidden;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.card-deck .card.card-mini .card-body {
+    overflow-x: auto
+}
+
+.card-deck .card.card-mini .card-body .rich-text {
+    max-height: calc(22px * 3);
+    min-height: auto;
+    padding: 0
+}
+
+@media all and (max-width:768px) and (min-width:575px) {
+    .card-deck .card.card-mini .card-body {
+        padding: calc(1.25rem - 15px)
+    }
+}
+
+.card-deck .card.card-mini .card-body .cta {
+    display: block;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.testimonial {
+    border: 3px solid var(--border-color);
+    margin: 40px 60px;
+    padding: 20px
+}
+
+@media (max-width:575px) {
+    .testimonial {
+        margin: 40px 20px;
+        padding: 10px
+    }
+}
+
+.testimonial div {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.testimonial blockquote {
+    line-height: 1.6;
+    padding: 20px 60px 0 40px
+}
+
+@media (max-width:575px) {
+    .testimonial blockquote {
+        line-height: 1.4;
+        padding: 20px 10px 10px 10px
+    }
+}
+
+.testimonial blockquote:before {
+    color: var(--primary-color);
+    content: '"';
+    font-family: ZillaSlub;
+    font-size: 12em;
+    font-style: italic;
+    font-weight: bold;
+    left: -50px;
+    line-height: 1;
+    position: absolute;
+    top: -20px
+}
+
+@media (max-width:575px) {
+    .testimonial blockquote:before {
+        left: -60px;
+        top: -50px
+    }
+}
+
+.testimonial blockquote .rich-text {
+    font-style: italic;
+    margin-top: 10px
+}
+
+.testimonial blockquote p.quote-person {
+    color: var(--primary-color);
+    font-weight: bold
+}
+
+.carousel .carousel-item img {
+    height: 411px;
+    object-fit: cover;
+    width: 575px
+}
+
+@media (max-width:767px) {
+    .carousel .carousel-item img {
+        height: auto;
+        width: 100%
+    }
+}
+
+.carousel .carousel-indicators {
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 10px
+}
+
+.carousel .carousel-indicators li {
+    height: 10px;
+    max-width: 10px
+}
+
+.social-share {
+    border-top: 4px solid var(--primary-color)
+}
+
+@media (max-width:576px) {
+    .social-share {
+        text-align: center
+    }
+}
+
+.social-share h6 {
+    display: inline-block;
+    font-family: OpenSans;
+    font-style: italic;
+    margin-right: 25px;
+    text-transform: uppercase
+}
+
+@media (max-width:576px) {
+    .social-share h6 {
+        display: block
+    }
+}
+
+.social-share a.share {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px
+}
+
+.bottom-banner {
+    background: var(--primary-color);
+    background: linear-gradient(to left, var(--primary-color), var(--gradient-color));
+    color: var(--gradient-text-color);
+    margin-top: 30px;
+    padding: 2em;
+    text-align: center
+}
+
+.bottom-banner a {
+    color: var(--gradient-text-color)
+}
+
+.bottom-banner .row div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+@media (max-width:768px) {
+    .bottom-banner .row div .btn {
+        margin-bottom: 20px
+    }
+}
+
+.bottom-banner p {
+    color: white
+}
+
+.bottom-banner .btn {
+    background-color: white;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    width: 250px
+}
+
+footer {
+    background: black;
+    color: white;
+    display: block;
+    height: 170px;
+    padding: 35px
+}
+
+@media (max-width:575px) {
+    footer {
+        height: 300px
+    }
+}
+
+footer .icon-container {
+    display: inline-block;
+    margin: 0 1em
+}
+
+footer .icon-container .icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0
+}
+
+footer .icon-container .icon img {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: .8;
+    width: 20px
+}
+
+footer .footer-content {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin: 15px auto;
+    max-width: 35.625rem
+}
+
+@media (max-width:575px) {
+    footer .footer-content {
+        display: inline-block;
+        text-align: center
+    }
+}
+
+footer .footer-content img {
+    border-bottom: 0;
+    border-right: 0.0625rem solid #666;
+    margin-bottom: 0;
+    margin-right: 1.25rem;
+    padding: 0.8rem 1.25rem 0.8rem 0;
+    width: 105px
+}
+
+@media (max-width:575px) {
+    footer .footer-content img {
+        border-bottom: 0.0625rem solid #666;
+        border-right: none;
+        margin-right: 0;
+        padding: 0.8rem 0.8rem 1.25rem 0.8rem
+    }
+}
+
+footer .footer-content p {
+    font-size: .9em;
+    margin-bottom: 0;
+    text-align: left;
+    width: calc(100% - 10.375rem)
+}
+
+@media (max-width:575px) {
+    footer .footer-content p {
+        padding-top: 0.8rem;
+        text-align: center;
+        width: auto
+    }
+}
+
+footer a {
+    color: lightgray;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: black;
+    font-family: 'OpenSans Light', sans-serif;
+    font-size: 16px;
+    line-height: 1.4
+}
+
+.page-wrap {
+    margin-bottom: -170px;
+    min-height: 100%
+}
+
+@media (max-width:575px) {
+    .page-wrap {
+        margin-bottom: -300px
+    }
+}
+
+.page-wrap:after {
+    content: '';
+    display: block;
+    height: 170px
+}
+
+@media (max-width:575px) {
+    .page-wrap:after {
+        height: 300px
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: ZillaSlab
+}
+
+.rich-text a {
+    text-decoration: underline
+}
+
+.rich-text a:hover,
+.rich-text a:active,
+.rich-text a:focus {
+    color: var(--primary-color)
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 100%;
+        width: 1170px
+    }
+}
+
+header {
+    background-color: var(--primary-color)
+}
+
+header .navbar-light {
+    background-color: white;
+    font-family: OpenSans;
+    padding: 1rem
+}
+
+header .navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-image: url("//static/img/hamburger.svg?3a802290b6d5");
+    opacity: 0.5
+}
+
+header .navbar-light .navbar-collapse .nav-item {
+    margin: 0 1.5rem;
+    padding: 8px
+}
+
+header .navbar-light .navbar-collapse .nav-item a.nav-link {
+    color: var(--nav-link-color);
+    display: inline-block;
+    height: 30px;
+    padding: 4px 0 0 0
+}
+
+header .navbar-light .navbar-collapse .nav-item a.nav-link:hover,
+header .navbar-light .navbar-collapse .nav-item a.nav-link:active,
+header .navbar-light .navbar-collapse .nav-item a.nav-link:focus,
+header .navbar-light .navbar-collapse .nav-item a.nav-link.active {
+    border-bottom: 1px solid var(--nav-link-color);
+    color: var(--nav-link-color)
+}
+
+header .navbar-light .navbar-brand {
+    width: 0
+}
+
+header .navbar-light .navbar-brand img {
+    width: 140px
+}
+
+header .clear-head {
+    height: 90px
+}
+
+header .jumbotron {
+    background-color: transparent;
+    color: white;
+    margin-bottom: 0;
+    padding: 60px 15px 50px 15px
+}
+
+header .jumbotron .rich-text {
+    color: black;
+    color: var(--gradient-text-color)
+}
+
+header .jumbotron .rich-text a {
+    color: black;
+    color: var(--gradient-text-color)
+}
+
+header .jumbotron .row {
+    align-items: center
+}
+
+header .lead {
+    margin-top: 20px;
+    padding-left: 0
+}
+
+header .lead .btn {
+    border: 1px solid var(--border-color);
+    color: white
+}
+
+header .lead .btn:hover {
+    background-color: inherit
+}
+
+.content {
+    padding: 30px 0
+}
+
+.content .nav-about a.nav-link {
+    font-weight: normal;
+    margin: 0 3em
+}
+
+@media (max-width:768px) {
+    .content .nav-about a.nav-link {
+        margin: 0 .3em
+    }
+}

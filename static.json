@@ -1,0 +1,28 @@
+{
+    "header": {
+        "navbar": [
+            {
+                "link": "/find-club/",
+                "text": "Find A Club"
+            },
+            {
+                "link": "/find-activity/",
+                "text": "Find An Activity"
+            },
+            {
+                "link": "/about-us/",
+                "text": "About Us"
+            },
+            {
+                "link": "/faq-page/",
+                "text": "Q&A"
+            },
+            {
+                "link": "/resources/",
+                "text": "Resources"
+            }
+        ],
+        "jumbotron": false
+    },
+    "footer": true
+}

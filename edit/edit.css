@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+body > div {
+  width: 30vw;
+  border: 0px;
+}
+
+body > iframe {
+  width: 100%;
+  border: 0px;
+}

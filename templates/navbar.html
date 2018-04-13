@@ -1,0 +1,29 @@
+<nav id="nav-top" class="navbar fixed-top navbar-light navbar-toggleable-md" role="navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent"
+    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">
+
+    <img alt="Open Source Clubs - Logo" height="118" src="https://coss-production-media.s3.amazonaws.com/images/clubs-black.original.png" width="370">
+
+  </a>
+
+  <div class="container-fluid">
+
+
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto">
+
+        {{ range . }}
+        <li class="nav-item">
+          <a href="{{ .link }}" class=" nav-link">{{ .text }}</a>
+        </li>
+        {{ end }}
+
+      </ul>
+    </div>
+
+  </div>
+</nav>

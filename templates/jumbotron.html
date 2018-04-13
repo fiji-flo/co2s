@@ -1,0 +1,19 @@
+<div class="container jumbotron">
+  <div class="row">
+    <div class="col-md-5">
+
+
+      <h3 class="highlight">{{ .title }}</h3>
+      <div class="rich-text"><p>{{ .text }}</p></div>
+
+      {{ with .action }}
+      <a href="{{ .link }} " class="btn btn-outline-primary">{{ .text }}</a>
+      {{ end }}
+
+
+    </div>
+    <div class="col-md-7 text-right hidden-sm-down">
+      <img alt="{{ .image.alt }}" class="img-fluid" height="330" src="{{ .image.src }}" width="662">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+    "header": {
+        "jumbotron": {
+            "title": "Open Source Clubs",
+            "text": "We\u2019re fueling the open movement by creating a network of clubs on\nuniversity campuses in the United States who learn about and contribute\nto open source.\n",
+            "action": {
+                "link": "https://goo.gl/forms/rhCwJZSsZ94WcCQK2",
+                "text": "Register Your Club"
+            },
+            "image": {
+                "src": "https://coss-production-media.s3.amazonaws.com/images/laptop-illustration.original.png",
+                "alt": "Open Source Clubs - heading image"
+            }
+        }
+    }
+}
